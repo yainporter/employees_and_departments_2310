@@ -91,6 +91,16 @@ You have been contracted by the State of Colorado to create a software system th
 
 Build upon your code from the first two iterations to complete this task.
 
+## Alternate Iteration 3
+
+You have been contracted by Coca-Cola to create a software system that can track all of its divisions. Specifically, they would like you implement the following functionality:
+
+Each division has a name, as well as a way to read that data
+Each division can list all of its departments
+A division can list all departments with multiple employees.
+A division can list all employees' names.
+Build upon your code from the first two iterations to complete this task.
+
 ## Iteration 4
 
 The State of Colorado has given you additional functionality they would like you to implement. They would like to track which employee is responsible for an expense. They should also be able to total all expenses for which a specific employee is responsible.
