@@ -89,15 +89,14 @@ You have been contracted by the State of Colorado to create a software system th
 2. A budget can list all of its departments
 3. A budget can list all departments with expenses less than $500
 4. A budget can list all employees' salaries
+5. A budget can list all departments and their current expenses
 
 | Method Name                     | Return Value |
 |-------------                    |--------------|
 | `year`                          | integer representing year (ex:`2023`) |
+| `departments`                   | `Array` containing `Department` objects |
 | `add_department(department)`    | up to you    |
 | `departments_with_low_expenses` | `Array` containing `Department` objects |
-| `employee_salaries`             | `Array` containing each Employee's salary |
+| `employee_salaries`             | `Array` containing each Employee's salary (which should be integers) |
+| `current_expenses_by_department`| `Hash` where keys are `Department` objects, and values are that `Department`'s current expenses |
 
-
-## Iteration 4
-
-The State of Colorado has given you additional functionality they would like you to implement. They would like to track which employee is responsible for an expense. They should also be able to total all expenses for which a specific employee is responsible.
