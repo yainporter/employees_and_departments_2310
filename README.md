@@ -82,25 +82,21 @@ pry(main)> customer_service.expenses
 
 ## Iteration 3
 
-You have been contracted by the State of Colorado to create a software system that can track its yearly budgets. Specifically, they would like you to implement the following functionality:
+You have been contracted by the State of Colorado to create a software system that can track its yearly budgets. Use TDD to create a `Budget` class that adds the following functionality: 
+(You may choose to add additional methods not listed here to help you build this functionality.)
 
 1. Each budget has a year, as well as a way to read that data
 2. A budget can list all of its departments
 3. A budget can list all departments with expenses less than $500
 4. A budget can list all employees' salaries
 
-Build upon your code from the first two iterations to complete this task.
+| Method Name                     | Return Value |
+|-------------                    |--------------|
+| `year`                          | integer representing year (ex:`2023`) |
+| `add_department(department)`    | up to you    |
+| `departments_with_low_expenses` | `Array` containing `Department` objects |
+| `employee_salaries`             | `Array` containing each Employee's salary |
 
-## Alternate Iteration 3
-
-You have been contracted by Coca-Cola to create a software system that can track all of its divisions. Specifically, they would like you implement the following functionality:
-
-1. Each division has a name, as well as a way to read that data
-2. Each division can list all of its departments
-3. A division can list all departments with multiple employees.
-4. A division can list all employees' names.
-
-Build upon your code from the first two iterations to complete this task.
 
 ## Iteration 4
 
