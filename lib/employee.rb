@@ -1,10 +1,10 @@
 class Employee
   attr_reader :name, :age, :salary
   
-  def initialize(name, age, salary)
-    @name = name
-    @age = age
-    @salary = salary
+  def initialize(hash)
+    @name = hash[:name]
+    @age = hash[:age]
+    @salary = hash[:salary].delete!("$").to_i
   end
 
   def give_raise(amount)
