@@ -17,11 +17,11 @@ class Budget
   def employee_salaries
     salaries = []
     departments.each do |department| 
-      salaries.flatten.each do |employee| 
-        salaries << employee.salary
-        require 'pry'; binding.pry
-      end
+      salaries << department.employees
     end
-    salaries
+    salaries.flatten.select! do |employee| 
+      salaries << employee.salary
+    end
+    require 'pry'; binding.pry
   end
 end
