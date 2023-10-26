@@ -3,7 +3,7 @@ class Employee
   
   def initialize(hash)
     @name = hash[:name]
-    @age = hash[:age]
+    @age = hash[:age].to_i
     @salary = hash[:salary].delete!("$").to_i
   end
 

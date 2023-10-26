@@ -15,13 +15,20 @@ class Budget
   end
 
   def employee_salaries
-    salaries = []
+    employee_salaries = []
     departments.each do |department| 
-      salaries << department.employees
+      department.employees.each do |employee|
+        employee_salaries << employee.salary
+      end
     end
-    salaries.flatten.select! do |employee| 
-      salaries << employee.salary
+    employee_salaries
+  end
+
+  def current_expenses_by_department
+    expenses = {}
+    departments.each do |department|
+      expenses.store(department.name,department.expenses)
     end
-    require 'pry'; binding.pry
+    expenses
   end
 end

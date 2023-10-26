@@ -31,11 +31,7 @@ RSpec.describe Department do
       customer_service.hire(bobbi)
       customer_service.hire(aaron)  
 
-      first_employee = customer_service.employees.first.name
-      second_employee = customer_service.employees.last.name
-
-      expect(first_employee).to eq("Bobbi Jaeger")
-      expect(second_employee).to eq("Aaron Tanaka")
+      expect(customer_service.employees).to eq([bobbi, aaron])
     end
   end
 
